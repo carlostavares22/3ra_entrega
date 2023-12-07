@@ -1,0 +1,31 @@
+{% extends 'core/index.html' %}
+
+{% block cont_title %}   
+{% endblock cont_title %}
+
+{% block content %}
+
+    <div class="row justify-content-center">
+        <div class="col-xl-6">
+            <div class="text-center text-white">
+                <!-- Page heading-->
+                <h1 class="mb-5">Buscar cliente</h1>
+                <form method="GET">
+                    {{ form.as_p }}
+                    <button type="submit">Buscar</button>
+                </form>
+                
+                {% if resultados %}
+                    <ul>
+                        {% for producto in resultados %}
+                            <h2>{{ producto.nombre }} y su correo es {{ producto.email }}</h2>
+                        {% endfor %}
+                    </ul>
+                {% else %}
+                    <h2>No se encontraron resultados.</h2>
+                {% endif %}            
+            </form>
+        </div>
+    </div>
+
+{% endblock content %}

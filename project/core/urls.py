@@ -6,4 +6,5 @@ app_name = "home"
 
 urlpatterns = [
     path("", views.home, name="index"),
+    path("search/", views.buscar_cliente, name="search"),
 ]

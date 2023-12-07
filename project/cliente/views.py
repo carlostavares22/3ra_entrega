@@ -1,5 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import ClienteForm
+from .models import Cliente
 
-# Create your views here.
-def home(request):
-    return render(request, "cliente/index.html")
+def crear(request):
+    if request.method == "POST":
+        form = ClienteForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect("home:index")
+    else:
+        form = ClienteForm()
+    return render(request, "cliente/index.html", {"form": form})

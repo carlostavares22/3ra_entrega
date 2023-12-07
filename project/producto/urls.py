@@ -2,8 +2,8 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 
-app_name = "producto"
+app_name = "servicio"
 
 urlpatterns = [
-    path("", views.home, name="index"),
+    path("", views.crear, name="index"),
 ]
