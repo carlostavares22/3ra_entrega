@@ -7,9 +7,7 @@
 
 Ubícate en la carpeta principal del proyecto y ejecuta el siguiente comando en tu entorno virtual de Python:
 
-```bash
-python manage.py runserver
-```
+```bash python manage.py runserver ```
 
 Si todo sale bien, podrás acceder al sitio en la siguiente dirección por defecto [http://127.0.0.1:8000/](http://127.0.0.1:8000/). Verifica también en tu terminal la dirección donde está corriendo el servidor.
 
