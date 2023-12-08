@@ -1,8 +1,6 @@
 # 3ra_entrega
 3ra Entrega
 
-```markdown
-
 ## Modos de Ejecución Local:
 
 Ubícate en la carpeta principal del proyecto y ejecuta el siguiente comando en tu entorno virtual de Python:
