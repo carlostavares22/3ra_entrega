@@ -11,7 +11,7 @@ Si todo sale bien, podrás acceder al sitio en la siguiente dirección por defec
 
 ## Pruebas de Desarrollo:
 
-Accede a [http://127.0.0.1:800/servicio o /producto](http://127.0.0.1:800/servicio o /producto) para registrar y agregar datos a la base de datos SQL.
+Accede a http://127.0.0.1:800/servicio o http://127.0.0.1:800/producto para registrar y agregar datos a la base de datos SQL.
 
 El sitio cuenta con las siguientes funcionalidades:
 
